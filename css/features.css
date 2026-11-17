@@ -1,0 +1,31 @@
+.features h3 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+.features p {
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-top: 8px;
+    max-width: 264px;
+}
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+.features {
+    padding: 120px 0;
+}
+.svg {
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
