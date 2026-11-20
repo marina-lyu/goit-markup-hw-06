@@ -30,6 +30,15 @@
 }
 .cont-container {
     display: none;
+}  
+.contacts a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    font-style: normal;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .burger-menu {
@@ -74,15 +83,7 @@
     border-radius: 2px;
     top: calc(100% - 4px)
   }
-  .contacts a {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    font-style: normal;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
   .nav-menu a:hover,
   .nav-menu a:focus,
   .nav-menu a.active{
