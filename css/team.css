@@ -61,6 +61,12 @@
   }
 }
 @media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+  .team .container {
+    padding: 0 16px;
+  }
   .team-list {
     flex-wrap: nowrap;
   }

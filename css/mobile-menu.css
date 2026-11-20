@@ -7,11 +7,11 @@
     background-color: #FFFFFF;
     top: 0;
     left: 0;
-    opacity: 0;
+    /*opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none;*/
 }
-.mobile-menu .is-open {
+.mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -22,21 +22,6 @@
     height: 100%;
     padding-top: 72px;
     padding-bottom: 40px;
-}
-.button-close {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 24px;
-    right: 24px;
-    color: #2E2F42;
-    background-color: #E7E9FC;
-    border-radius: 50%;
-    padding: 8px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover,
 .button-close:focus {
@@ -75,6 +60,9 @@
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+}
+.contact-menu a[href^="tel:"] {
+  color: #4d5ae5;
 }
 .contact-menu a:hover,
 .contact-menu a:active,
