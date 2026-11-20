@@ -5,7 +5,7 @@
     z-index: 9999;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: rgba(46, 47, 66, 0.4);
     top: 0;
     left: 0;
@@ -21,13 +21,10 @@
 .modal {
     position: relative;
     background-color: #FCFCFC;
-    width: 408px;
-    height: 582px;
+    width: 288px;
+    height: 619px;
     border-radius: 4px;
-    padding-top: 72px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 72px 16px 24px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
                 0 1px 3px 0 rgba(0, 0, 0, 0.12), 
                 0 2px 1px 0 rgba(0, 0, 0, 0.2); 
@@ -223,4 +220,14 @@ input:checked {
 }
 .agreement-checkbox:checked + .agree-label .check-icon {
     opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .modal-overlay {
+    align-items: center;
+  }
+  .modal {
+    width: 408px;
+    height: 582px;
+    padding: 72px 24px 24px; 
+   }
 }

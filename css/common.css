@@ -1,3 +1,6 @@
+.hide {
+    display: none;
+}
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -18,11 +21,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 a {
     color: inherit;
@@ -46,6 +44,14 @@ button {
     clip-path: inset(100%);
     margin: -1px;
 }
+.container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.section {
+    padding: 96px 0;
+}
 .icon-social {
     color: #F4F4FD;
 }
@@ -58,4 +64,18 @@ button {
     width: 40px;
     height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }   
+  .section {
+    padding: 120px 0;
+} 
 }

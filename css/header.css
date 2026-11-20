@@ -1,3 +1,8 @@
+.header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -6,23 +11,43 @@
     letter-spacing:  0.03em;;
     line-height: 1.33;
     color: #2E2F42;
-}  
+    padding: 16px 0;
+}
 .web {
     color: #4D5AE5;
-}  
-.header>.container {
+} 
+.burger-menu {
+    margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border: none;
 }
-.container .nav-menu {
-    margin-right: auto;
-    margin-left: 76px;
+.nav-container {
+    display: none;
 }
-.nav-container{
+.cont-container {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .nav-container {
     display: flex;
     gap: 40px;
-}
-.nav-menu a {
+  }
+  .cont-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+    .nav-menu a {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #2E2F42;
@@ -31,15 +56,8 @@
     display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-menu a:hover,
-.nav-menu a:focus{
-    color: #404BBF;
-}
-.nav-menu a.active {
-    color: #404BBF;
-}
-.nav-menu a.active::after {
+  }
+  .nav-menu a.active::after {
     content: '';
     display: block;
     position: absolute;
@@ -48,24 +66,28 @@
     background-color: #404BBF;
     border-radius: 2px;
     top: calc(100% - 4px)
-}
-.cont-container {
-    display: flex;
-    gap: 40px;
-}
-.contacts a {
+  }
+  .contacts a {
     letter-spacing: 0.02em;
     font-style: normal;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts a:hover,
-.contacts a:focus{
+  }
+  .nav-menu a:hover,
+  .nav-menu a:focus,
+  .nav-menu a.active{
     color: #404BBF;
-}
-.contacts a:active {
+  }  
+  .contacts a:hover,
+  .contacts a:focus,
+  .contacts a:active{
     color: #404BBF;
+  }
 }
-.header {
-    border-bottom: 1px solid #e7e9fc;
-}
+@media screen and (min-width: 1158px) {
+  .cont-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}   
